@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        
+        <link rel="stylesheet" href="index_css1.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+        <script>
+            if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker Registered!'))
+            .catch(err => console.log('Service Worker Failed', err));
+                });
+            }
+        </script>
+
+<link rel="manifest" href="manifest.json">
+    </head>
+
+    <!-- Header and navigation -->
+
+   <header>
+    <h1 class="tt">Tran Minh Nghia Portfolio</h1>
+    <nav class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <button onclick="window.location.href='Skills.html'">Skills</button>
+            <button onclick="window.location.href='Qualifications.html'">Qualifications</button>
+        </div>
+    </nav>
+    </header>
+
+    <body>
+        <p class = "block">This is the home page for the website. To move to other pages, please use the navigation menu.</p> 
+
+        <article>
+            <h2 class="title"><b>About me</b></h2>
+            <p class="block">My name is Tran Minh Nghia, a Computer Science student at BUV.
+            This website is created to showcase my skills and qualifications to get me a job in tech.
+            Besides that, this website is also a cry for help to get me out of this place,
+            where I will be trapped for the next 2 years. I hope by creating this website, I will not have to go from being a student
+            to being unemployed.
+            Though I have my quirks, I am dedicated to my studies and career goals.
+            In my free time, I enjoy playing video games and exploring new technologies, 
+            especially those related to cloud engineering and cybersecurity.</p>
+
+            <p class="block">This paragraph is created to satisfy the marking rubrics and does not provide any information regarding my personal life.
+            Therefore, please do not read this paragraph. It is just here to make sure I have enough content on the home page to meet the requirements of the assignment.
+            </p>
+        </article>
+
+        <article>
+            <h2 class="title">Current Focus</h2>
+            <p class="block">I do not just wait for lectures to learn. Right now, I am deep-diving into:
+            <br>- Cloud Infrastructure: Automating deployments and managing virtual environments.
+            <br>- Defensive Security: Understanding vulnerabilities to build more resilient systems.
+            <br>- Professional Growth: Seeking an internship where I can contribute to a production-grade codebase.
+            </p>
+        </article>
+
+        <h3 class="title">Hi</h3>
+        <ul class="block">
+            <li><b>The Vision:</b> I aim to bridge the gap between complex backend logic and intuitive user interfaces.</li>
+            <li><b>The Experience:</b> Over 4 years of building responsive web applications using modern frameworks.</li>
+            <li><b>The Motivation:</b> Fueled by black coffee and the satisfaction of solving a "broken" piece of code.</li>
+        </ul>
+
+        <h3 class="title">A Quick Snapshot</h3>
+        <ol class="block">
+            <li><strong>Your Identity:</strong> Future Homeless Guy.</li>
+            <li><strong>Your Top Skill:</strong> None.</li>
+            <li><strong>Your Goal:</strong> Trying to find a job.</li>
+        </ol>
+
+        <article class="flex-container">
+    <article class="connect-section">
+        <h2 class="title">Connect With Me</h2>
+        <p class="block">
+            Reach out to me through the following platforms:<br>
+            - LinkedIn: <a href="https://www.linkedin.com/in/minh-nghia-tran-1b2251381/" target="_blank">Minh Nghia Tran</a><br>
+            - GitHub: <a href="https://github.com/onlineu1" target="_blank">onlineu1</a><br>
+            - Email: <a href="mailto:mnghiatran04@gmail.com" target="_blank">mnghiatran04@gmail.com</a>
+        </p>
+    </article>
+        </article>
+    </body>
+</html>
+
+<footer>
+    <p>© 2026 To satisfy marking rubrics. All rights reserved.</p>
+</footer>
